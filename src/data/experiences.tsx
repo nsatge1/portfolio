@@ -21,7 +21,7 @@ const experiences = [
     },
     {
         company: 'UQAC',
-        logo: '/logo-UQAC.png',
+        logo: '/Logo-UQAC.png',
         role: 'Assistant ingénieur Cybersécurité Réseaux',
         dates: 'Juin — Août 2024',
         description:

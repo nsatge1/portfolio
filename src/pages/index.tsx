@@ -197,7 +197,7 @@ export default function Home() {
                 className="grid gap-4 max-w-xl"
               >
                 <input type="text" name="_honey" style={{ display: 'none' }} />
-                <input type="hidden" name="_next" value="https://tonsite.vercel.app/merci" />
+                <input type="hidden" name="_next" value="https://nathan-satge.vercel.app/merci" />
 
                 <input name="name" placeholder="Nom" required className="p-2 rounded bg-gray-800 text-white" />
                 <input name="email" type="email" placeholder="Email" required className="p-2 rounded bg-gray-800 text-white" />
