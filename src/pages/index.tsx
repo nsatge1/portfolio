@@ -192,7 +192,7 @@ export default function Home() {
             <section id="contact" className="scroll-mt-32">
               <h3 className="text-xl font-semibold text-white mb-2">Contact</h3>
               <form
-                action="https://formsubmit.co/ton@email.com"
+                action="https://formsubmit.co/satge78@gmail.com"
                 method="POST"
                 className="grid gap-4 max-w-xl"
               >
