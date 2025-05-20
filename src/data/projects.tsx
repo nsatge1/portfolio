@@ -1,20 +1,26 @@
 const projects = [
-    {
-      slug: "arkea-api",
-      title: "API sécurisée – Arkéa Crédit Mutuel",
-      description:
-        "Développement d’une API REST sécurisée pour le partage d’informations bancaires sensibles. RGPD, chiffrement, authentification.",
-      stack: ["Java", "Spring Boot", "JWT", "RGPD"],
-      githubUrl: "https://github.com/ton-github/arkea-api"
-    },
-    {
-      slug: "zero-trust-app",
-      title: "Zero Trust App – INRIA",
-      description:
-        "App desktop de gestion de réseaux sécurisés avec certificats, routeur, CI/CD GitLab.",
-      stack: ["Svelte", "NeutralinoJS", "PKI", "Zero Trust"],
-      githubUrl: "https://github.com/ton-github/zero-trust-app"
-    }
-  ];
-  
-  export default projects;
+  {
+    slug: "phishaware",
+    title: "PhishAware – App mobile anti-phishing",
+    description: `Application mobile éducative pour sensibiliser les utilisateurs au phishing. Analyse de message, quiz interactif, actualités sur les cybermenaces.`,
+    stack: ["React Native", "Node.js", "Regex", "Sécurité", "Design mobile"],
+    image: "/phi.png",
+    githubUrl: "https://github.com/nsatge1/PhishawareV3"
+  },
+  {
+    slug: "router-audit",
+    title: "Audit Réseau – Routeur Wi-Fi",
+    description: `Audit complet d’un routeur domestique via Nmap, Wireshark et tests de ports/services. Rapport d’analyse des failles et recommandations de mitigation.`,
+    stack: ["Kali Linux", "Nmap", "Wireshark", "TCP/IP"],
+    image: "/new.png",
+  },
+  {
+    slug: "owasp-audit",
+    title: "Audit OWASP – Application vulnérable",
+    description: `Identification et correction des 10 failles principales de l’OWASP Top 10. Rapport avec preuve de concept sur chaque vulnérabilité exploitée.`,
+    stack: ["OWASP", "BurpSuite", "ZAP", "Pentest"],
+    image: "/test.png",
+  }
+];
+
+export default projects;
