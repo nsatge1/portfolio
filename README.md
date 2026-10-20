@@ -1,40 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Portfolio: Nathan Satge
 
-## Getting Started
+My personal website: who I am, my experience, and my cybersecurity projects.
 
-First, run the development server:
+**Live site:** https://nathan-satge.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+| Part | Tool |
+|---|---|
+| Framework | Next.js 15 (Pages Router), React 19, TypeScript |
+| Style and animation | Tailwind CSS 4, Framer Motion |
+| Icons | lucide-react, react-icons |
+| Contact form | FormSubmit |
+| Hosting | Vercel |
+
+## Structure
+
+```text
+src/pages/index.tsx      home page: profile, skills, experience, projects
+src/pages/projects/      one page per detailed project
+src/pages/merci.tsx      thank-you page after the contact form
+src/data/                projects and experience lists (edit these to update the site)
+public/                  images and CV
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run it locally
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm ci
+npm run dev        # http://localhost:3000
+npm run build      # production build
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Security
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Next.js is kept on a patched 15.5 release (`npm audit` shows no critical issue).
+- No secrets in the code: the site is static, and the contact form posts to FormSubmit.
